@@ -1,1 +1,1 @@
-This is a html form for ARFFS in JKIA checking for thir wellness.
+This is a html form for ARFFS(Aviation Rescue Fire Fighter) in JKIA checking for their wellness.
