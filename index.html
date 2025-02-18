@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">ARRF Survey Form</h1>
+      <p id="description">Thank you for partaking in this survey.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input required type="text" id="name" placeholder="Jhon Doe" />
+        <br />
+        <label for="email" id="email-label">Email:</label>
+        <input
+          required
+          type="email"
+          id="email"
+          placeholder="example@gmail.com"
+        />
+        <br />
+        <label for="number" id="number-label">Age:</label>
+        <input
+          required
+          type="number"
+          id="number"
+          placeholder="19"
+          min="19"
+          max="65"
+        />
+        <br />
+        <p>
+          Which option best describes your current role in the Fire service?
+        </p>
+        <label for="dropdown"></label>
+        <select id="dropdown">
+          <option value="On_Job_Training">On Job Training</option>
+          <option value="Fire_Training">Fire Training</option>
+          <option value="Fire_Fighter">Fire Fighter</option>
+          <option value="Watchroom">Watchroom Atendant</option>
+          <option value="EMT">EMT</option>
+        </select>
+        <br />
+        <p>What is your next transition in the Fire service?</p>
+        <input
+          type="radio"
+          name="transition"
+          value="Fire_Fighter"
+          id="Fire_Fighter"
+        />
+        <label for="Fire_Fighter">Fire Fighter</label><br />
+        <input type="radio" name="transition" value="EMT" id="EMT" />
+        <label for="EMT">EMT</label><br />
+        <input
+          type="radio"
+          name="transition"
+          value="Watchroom"
+          id="Watchroom"
+        />
+        <label for="Watchroom">Watchroom Atendant</label><br />
+        <input
+          type="radio"
+          name="transition"
+          value="Senior_Fire_Fighter"
+          id="Senior_Fire_Fighter"
+        />
+        <label for="Senior_Fire_Fighter">Senior Fire Fighter</label><br />
+        <input
+          type="radio"
+          name="transition"
+          value="Fire_Captain"
+          id="Fire_Captain"
+        />
+        <label for="Fire_Captain">Fire Captain</label>
+        <br />
+        <p>What is your favorite part of the Fire service?</p>
+        <input
+          type="checkbox"
+          name="favorite"
+          value="Foot_Drill"
+          id="Foot_Drill"
+        />
+        <label for="Foot_Drill">Foot Drill</label><br />
+        <input
+          type="checkbox"
+          name="favorite"
+          value="Fire_Fighting"
+          id="Fire_Fighting"
+        />
+        <label for="Fire_Fighting">Fire Fighting</label><br />
+        <input
+          type="checkbox"
+          name="favorite"
+          value="Aircraft_Familiarization"
+          id="Aircraft_Familiarization"
+        />
+        <label for="Aircraft_Familiarization">Aircraft Familiarization</label
+        ><br />
+        <input type="checkbox" name="favorite" value="Gym" id="Gym" />
+        <label for="Gym">Gym</label><br />
+        <input
+          type="checkbox"
+          name="favorite"
+          value="Fire_Prevention"
+          id="Fire_Prevention"
+        />
+        <label for="Fire_Prevention">Fire Prevention</label><br />
+        <input type="checkbox" name="favorite" value="EMT" id="EMT" />
+        <label for="EMT">EMT</label><br />
+        <input
+          type="checkbox"
+          name="favorite"
+          value="Watchroom"
+          id="Watchroom"
+        />
+        <label for="Watchroom">Watchroom</label><br />
+        <textarea cols="20" rows="10" name="comments" id="comments"></textarea><br />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
